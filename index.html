@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Event Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            width: 600px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5b21b6;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            background: #5b21b6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4c1d95;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Event Registration</h1>
+
+    <p class="description">
+        Register for the upcoming student event.
+    </p>
+
+    <label>Event Name</label>
+    <input type="text" value="Tech Fest 2026" readonly>
+
+    <label>Event Description</label>
+    <textarea readonly>
+Join us for an exciting technical event featuring workshops, competitions and interactive sessions.
+    </textarea>
+
+    <label>Student Name</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Register Number</label>
+    <input type="text" placeholder="Enter your register number">
+
+    <label>Department</label>
+    <input type="text" placeholder="Enter your department">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Event Date</label>
+    <input type="date">
+
+    <button type="button">Register for Event</button>
+
+</div>
+
+</body>
+</html>
